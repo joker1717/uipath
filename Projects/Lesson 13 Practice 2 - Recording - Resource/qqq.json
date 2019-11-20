@@ -1,0 +1,13 @@
+{
+  "description": "Blank Project",
+    "studioVersion": "19.9.2.0",
+  "projectVersion": "1.0.0",
+  "main": "Main.xaml",
+  "id": "Demo",
+  "dependencies": {},
+  "configurationOptions": {},
+  "excludedData": [
+    "Private:*",
+    "*password*"
+  ]
+}
