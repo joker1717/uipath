@@ -1,0 +1,21 @@
+Introduction
+Let’s imagine the following scenario. We have a teller application called “UiDemo”. We need to automate the process of inserting transactions. The transaction-related input data is stored in an Excel file. You might think this process is simple enough – we need to use a Read Range activity, then to loop through each row in the resulting DataTable to register the transactions in UiDemo. However, the challenge here is that due to the very large number of transactions, multiple robots are required to work at the same time. According to the Solution Architect and the Business Analyst, we need to allocate the process to as many as 5 robots.
+
+Additional Information: The input Excel file has three columns – one for each of the three fields to be filled.
+
+The BA has identified two Business Exceptions:
+
+Invalid input data – Values are not numbers.
+CashIn too large – we cannot process CashIn values larger than 1000$.
+The Solution Architect has required to retry failed transactions two times. In case of an Application Exception, the robot should recover from the error and continue working. If the last retry fails, an error is thrown. The retry of a transaction should be logged as a warning.
+
+Create an automation that accomplishes the above task.
+
+Hints: Use Orchestrator Queues and the REFramework. The REFramework can be found here.
+
+You can download UiDemo here. A sample Excel file can be found here.
+
+Find the credentials for UiDemo below.
+
+Username: admin
+Password: password
